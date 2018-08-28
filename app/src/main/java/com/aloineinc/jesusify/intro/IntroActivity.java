@@ -5,8 +5,10 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 ;
 
 import com.aloineinc.jesusify.R;
@@ -18,7 +20,7 @@ public class IntroActivity extends AppCompatActivity {
     private MpagerAdapter mpagerAdapter;
     private LinearLayout Dots_Layout;
     private ImageView[] dots;
-
+    private Button mSignUp, mSignIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +53,7 @@ public class IntroActivity extends AppCompatActivity {
             }
 
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.setMargins(4, 0, 4, 0);
+            params.setMargins(8, 0, 8, 0);
 
             Dots_Layout.addView(dots[i], params);
         }
@@ -75,4 +77,6 @@ public class IntroActivity extends AppCompatActivity {
         });
 
     }
+
+
 }

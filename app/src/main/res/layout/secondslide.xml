@@ -37,7 +37,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ify"
+            android:text="sify"
             android:textColor="#FDFDFD"
             android:textSize="40sp"
             android:textStyle="bold" />
