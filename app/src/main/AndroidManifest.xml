@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".intro.IntroActivity" />
+        <activity android:name=".intro.IntroActivity"
+            android:theme="@style/AppNoActionBarTheme"
+            />
         <activity
             android:name=".authentication.SignupActivity"
             android:label="@string/signup" />
@@ -24,7 +26,8 @@
             android:name=".authentication.SigninActivity"
             android:label="@string/signin" />
         <activity android:name=".LibraryActivity" />
-        <activity android:name=".CartActivity"></activity>
+        <activity android:name=".CartActivity"
+            android:label="Cart"/>
     </application>
 
 </manifest>

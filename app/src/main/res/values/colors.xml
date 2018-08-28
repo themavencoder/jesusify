@@ -10,4 +10,7 @@
     <color name= "btnfacebookcolor">#3B5998</color>
     <color name= "btntwittercolor">#1dcaff</color>
     <color name="lightblue">#42A5F5</color>
+    <color name="colorbackground">#171717</color>
+    <color name="ash">#BDBDBD</color>
+    <color name="button_color">#FB1949</color>
 </resources>
