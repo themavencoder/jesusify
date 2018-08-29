@@ -25,6 +25,7 @@ public class IntroActivity extends AppCompatActivity  {
     private MpagerAdapter mpagerAdapter;
     private LinearLayout Dots_Layout;
     private ImageView[] dots;
+    private Button mSigninbtn, mSignoutbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +38,8 @@ public class IntroActivity extends AppCompatActivity  {
 
     private void init() {
         mPager = findViewById(R.id.viewPager);
+        mSigninbtn = findViewById(R.id.btn_signin);
+        mSignoutbtn =findViewById(R.id.btn_sign_up);
         mpagerAdapter = new MpagerAdapter(layouts,this);
         mPager.setAdapter(mpagerAdapter);
         Dots_Layout = findViewById(R.id.dotsLayout);
@@ -83,7 +86,15 @@ public class IntroActivity extends AppCompatActivity  {
 
     }
 
+public void login(View v) {
+        Intent intent = new Intent(this, SigninActivity.class);
+        startActivity(intent);
+}
 
+public void logout(View v) {
+        Intent intent = new Intent(this, SignupActivity.class);
+        startActivity(intent);
+}
 
     }
 

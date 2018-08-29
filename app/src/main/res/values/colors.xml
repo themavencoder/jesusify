@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#d32f2f</color>
     <color name = "blackShade">#263238</color>
     <color name="hintcolor">#E0E0E0</color>
     <color name="btnsignup">#d32f2f</color>
