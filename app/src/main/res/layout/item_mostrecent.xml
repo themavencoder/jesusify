@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@color/colorbackground"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_mostrecent"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thinkbig"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Think Big"
+            android:id="@+id/tv_messagetitle"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="By"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/tv_messagepreacher"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dp"
+                android:textColor="#2D9CDB"
+                android:text="Pastor EA Adeboye"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/tv_messageduration"
+            android:textColor="@color/white"
+            android:layout_marginTop="4dp"
+            android:text="I hrs and 30 mins"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/tv_messagereleasedate"
+            android:layout_marginTop="4dp"
+            android:text="Release date: 31-12-2017"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/tv_messagedownloads"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="Downloads: (234)"/>
+
+
+
+    </LinearLayout>
+   <LinearLayout
+       android:gravity="end"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:layout_gravity="center_vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="12sp"
+           android:textStyle="bold"
+           android:layout_marginRight="8dp"
+           android:textColor="@color/colorAccent"
+           android:layout_marginTop="4dp"
+           android:layout_marginBottom="8dp"
+           android:text="Buy Now"/>
+
+
+
+   </LinearLayout>
+
+</LinearLayout>
