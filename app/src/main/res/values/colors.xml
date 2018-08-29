@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#d32f2f</color>
+    <color name="colorAccent">#fb1949</color>
     <color name = "blackShade">#263238</color>
     <color name="hintcolor">#E0E0E0</color>
     <color name="btnsignup">#d32f2f</color>
@@ -16,4 +16,5 @@
 
     <color name="active_dots">#FB1949</color>
     <color name="inactive_dots">#FFFFFF</color>
+    <color name="pagertextidle">#B2FFFFFF</color>
 </resources>
