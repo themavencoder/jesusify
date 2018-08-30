@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.aloineinc.jesusify.R;
+import com.aloineinc.jesusify.mainscreen.mostrecent.Datas;
 import com.aloineinc.jesusify.mainscreen.mostrecent.MostRecentModel;
 import com.aloineinc.jesusify.mainscreen.mostrecent.MostRecentRecyclerViewAdapter;
 
@@ -44,41 +45,16 @@ public class FragmentMostrecent extends Fragment {
         super.onCreate(savedInstanceState);
 
         listModel = new ArrayList<>();
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));   listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));   listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));   listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));   listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
-        listModel.add(new MostRecentModel("Think Big","Pastor EA Adeboye","1 hrs and 40minutes","Released Date: 31-07-2017","Downloads: (345)",R.drawable.thinkbig));
+        Datas.getModel(listModel);
+        getModel(listModel);
 
 
 
 
+
+    }
+
+    private void getModel(List<MostRecentModel> listModel) {
 
     }
 }
