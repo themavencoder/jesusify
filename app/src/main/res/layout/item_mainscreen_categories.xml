@@ -21,20 +21,46 @@
             android:textSize="16sp"
             android:textStyle="bold"
             />
-        <TextView
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="All Categories"
-            android:textColor="@color/white"
-            android:layout_gravity="end"
             android:gravity="end"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            />
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Total:34"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/ash"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
 
 
-        <
+        </LinearLayout>
+
+
+
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faith"
+        android:layout_marginTop="33dp"
+        android:textColor="#2d9cdb"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>
