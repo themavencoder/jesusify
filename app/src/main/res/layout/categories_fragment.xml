@@ -3,7 +3,57 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/colorbackground"
     android:orientation="vertical"
+    android:layout_marginTop="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Categories"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="end">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="16dp"
+              android:gravity="center_vertical"
+              android:text="Total: 34"
+              android:layout_marginTop="24dp"
+              android:textColor="@color/ash"
+              android:textSize="12sp"
+              android:textStyle="bold" />
+
+      </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view_mainscreen_categories"
+        >
+
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>

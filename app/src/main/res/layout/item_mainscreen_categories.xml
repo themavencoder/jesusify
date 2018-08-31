@@ -3,55 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="24dp"
-    android:layout_marginLeft="16dp"
+    android:layout_marginLeft="24dp"
     android:background="@color/colorbackground"
     android:orientation="vertical">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="All Categories"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:text="Total:34"
-                android:gravity="center_vertical"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="16dp"
-                android:textColor="@color/ash"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-
-
-        </LinearLayout>
-
-
-
-    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Faith"
-        android:layout_marginTop="33dp"
+        android:elegantTextHeight="true"
+        android:id="@+id/tv_categorytext"
         android:textColor="#2d9cdb"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -59,8 +22,11 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="33dp"
-        android:
+        android:layout_height="1dp"
+        android:layout_marginRight="16dp"
+
+
+        android:background="@color/ash"
         android:layout_marginTop="16dp"/>
 
 </LinearLayout>
