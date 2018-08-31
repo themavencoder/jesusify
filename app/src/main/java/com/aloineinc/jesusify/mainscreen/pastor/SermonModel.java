@@ -1,34 +1,21 @@
 package com.aloineinc.jesusify.mainscreen.pastor;
 
 public class SermonModel {
-
-    private int sermonImage;
-    private String sermonTitle;
-    private String sermonPreacher;
-    private String sermonDuration;
-    private String sermonReleasedDate;
-
-    public SermonModel() {
-    }
+        private int sermonImage;
+        private String sermonName;
+        private String sermonDate;
+        private String sermonDownloads;
 
     public void setSermonImage(int sermonImage) {
         this.sermonImage = sermonImage;
     }
 
-    public void setSermonTitle(String sermonTitle) {
-        this.sermonTitle = sermonTitle;
+    public void setSermonName(String sermonName) {
+        this.sermonName = sermonName;
     }
 
-    public void setSermonPreacher(String sermonPreacher) {
-        this.sermonPreacher = sermonPreacher;
-    }
-
-    public void setSermonDuration(String sermonDuration) {
-        this.sermonDuration = sermonDuration;
-    }
-
-    public void setSermonReleasedDate(String sermonReleasedDate) {
-        this.sermonReleasedDate = sermonReleasedDate;
+    public void setSermonDate(String sermonDate) {
+        this.sermonDate = sermonDate;
     }
 
     public void setSermonDownloads(String sermonDownloads) {
@@ -40,35 +27,27 @@ public class SermonModel {
         return sermonImage;
     }
 
-    public String getSermonTitle() {
-        return sermonTitle;
+    public String getSermonName() {
+        return sermonName;
     }
 
-    public String getSermonPreacher() {
-        return sermonPreacher;
-    }
-
-    public String getSermonDuration() {
-        return sermonDuration;
-    }
-
-    public String getSermonReleasedDate() {
-        return sermonReleasedDate;
+    public String getSermonDate() {
+        return sermonDate;
     }
 
     public String getSermonDownloads() {
         return sermonDownloads;
     }
 
-    public SermonModel(int sermonImage, String sermonTitle, String sermonPreacher, String sermonDuration, String sermonReleasedDate, String sermonDownloads) {
-        this.sermonImage = sermonImage;
-        this.sermonTitle = sermonTitle;
-        this.sermonPreacher = sermonPreacher;
-        this.sermonDuration = sermonDuration;
+    public SermonModel(int sermonImage, String sermonName, String sermonDate, String sermonDownloads) {
 
-        this.sermonReleasedDate = sermonReleasedDate;
+        this.sermonImage = sermonImage;
+        this.sermonName = sermonName;
+        this.sermonDate = sermonDate;
         this.sermonDownloads = sermonDownloads;
     }
 
-    private String sermonDownloads;
+    public SermonModel() {
+
+    }
 }
