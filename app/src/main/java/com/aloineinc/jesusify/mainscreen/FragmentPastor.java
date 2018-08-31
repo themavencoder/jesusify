@@ -52,20 +52,28 @@ public class FragmentPastor extends android.support.v4.app.Fragment {
         while (i < 15) {
             one.setSermonName("Pastor EA Adeboye");
             List<SermonModel> adeboyeSermon = new ArrayList<>();
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
-            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "Downloads: 300"));
 
             one.setSermonList(adeboyeSermon);
 
