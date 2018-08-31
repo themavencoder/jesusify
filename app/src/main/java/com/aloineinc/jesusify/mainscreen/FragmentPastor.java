@@ -19,9 +19,9 @@ import java.util.List;
 
 public class FragmentPastor extends android.support.v4.app.Fragment {
     View v;
-    private List<SermonModel> sermonList = new ArrayList<>();
+    private List<SectionModel> sectionList = new ArrayList<>();
     private RecyclerView recyclerView;
-    private SermonAdapter sermonAdapter;
+    private SectionAdapter sectionAdapter;
 
     public FragmentPastor() {
     }
@@ -32,10 +32,11 @@ public class FragmentPastor extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.pastor_fragment, container, false);
         recyclerView = v.findViewById(R.id.recycler_pastor_fragment);
-        sermonAdapter = new SermonAdapter(getContext(),sermonList);
+        recyclerView.setHasFixedSize(true);
+        sectionAdapter = new SectionAdapter(sectionList, getContext());
         //RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
-        recyclerView.setAdapter(sermonAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+        recyclerView.setAdapter(sectionAdapter);
 
 
         return v;
@@ -46,67 +47,33 @@ public class FragmentPastor extends android.support.v4.app.Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
+        SectionModel one = new SectionModel();
+        int i = 0;
+        while (i < 15) {
+            one.setSermonName("Pastor EA Adeboye");
+            List<SermonModel> adeboyeSermon = new ArrayList<>();
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
+            adeboyeSermon.add(new SermonModel(R.drawable.thinkbig, "Think big", "31-04-2018", "300"));
 
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
+            one.setSermonList(adeboyeSermon);
 
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
+            sectionList.add(one);
+            i++;
 
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
+        }
+    }
 
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-        sermonList.add(new SermonModel(R.drawable.thinkbig,"Think Big","21-01-2016","Downloads 244"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//        sectionList.add(new SectionModel("Pastor EA Adeboye"));
-//
 
     }
-}
