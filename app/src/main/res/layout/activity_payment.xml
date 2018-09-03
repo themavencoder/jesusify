@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".payment.PaymentActivity">
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kolawole@univelcity.com"
+        android:textColor="@color/hintcolor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="196dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="NGN 100"
+        android:textColor="@color/button_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:text="Card Number"
+        android:textColor="@color/ash"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginLeft="48dp"
+
+        android:layout_marginRight="48dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/bg_editext"
+        android:drawableRight="@drawable/mastercard"
+        android:hint="0000 0000 0000 0000"
+        android:paddingLeft="16dp"
+        android:paddingRight="24dp"
+        android:textColor="@color/ash"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Expiry Date"
+        android:textColor="@color/ash"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="48dp" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CVV"
+        android:textColor="@color/ash"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="207dp" />
+
+    <EditText
+        android:id="@+id/editTex"
+        android:layout_width="157dp"
+        android:layout_height="30dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_editext"
+        android:hint="07/20"
+        android:paddingLeft="16dp"
+        android:paddingRight="24dp"
+        android:textColor="@color/ash"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/editTex2"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/editTex2"
+        android:layout_width="151dp"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_editext"
+        android:hint="07/20"
+        android:paddingLeft="16dp"
+        android:paddingRight="24dp"
+        android:textColor="@color/ash"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/btn_payment_with_card"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+
+        android:background="@color/btnsignup"
+        android:text="Pay NGN 100"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editTex"
+        app:layout_constraintStart_toStartOf="@+id/editTex2"
+        tools:layout_editor_absoluteY="433dp" />
+</android.support.constraint.ConstraintLayout>
