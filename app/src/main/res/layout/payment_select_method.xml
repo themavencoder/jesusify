@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select number of credit"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <Spinner
+        android:id="@+id/main_spinner"
+        android:layout_width="68dp"
+
+        android:layout_height="25dp"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select payment method"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+
+        android:layout_width="220dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="312dp"
+        android:background="@drawable/btn_payment"
+        android:drawableLeft="@drawable/visa"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+
+
+        android:hint="VISA CARD"
+
+        android:paddingLeft="12dp"
+        android:textColor="@color/hintcolor"
+        android:textColorHint="#616161"
+        android:textSize="12sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="85dp" />
+
+
+    <TextView
+
+        android:layout_width="220dp"
+        android:layout_height="47dp"
+        android:background="@drawable/btn_payment"
+        android:drawableLeft="@drawable/mastercard"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+
+
+        android:hint="MASTER CARD"
+
+        android:paddingLeft="12dp"
+        android:textColor="#616161"
+        android:textColorHint="#616161"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <TextView
+
+        android:id="@+id/textView20"
+        android:layout_width="220dp"
+        android:layout_height="47dp"
+        android:background="@drawable/btn_payment"
+        android:drawableLeft="@drawable/wallet"
+        android:drawablePadding="8dp"
+
+
+        android:gravity="center_vertical"
+
+        android:hint="WALLET"
+        android:paddingLeft="12dp"
+        android:textColor="#616161"
+        android:textColorHint="#616161"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/btn_payment_with_card"
+        android:layout_width="226dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="24dp"
+        android:background="@color/btnsignup"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+</android.support.constraint.ConstraintLayout>
