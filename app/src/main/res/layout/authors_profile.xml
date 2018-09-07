@@ -36,22 +36,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="21dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:text="About"
         android:textColor="@color/white"
         android:textSize="16sp"
 
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
         android:layout_width="293dp"
         android:layout_height="wrap_content"
-        android:padding="8dp"
         android:gravity="center"
+        android:padding="8dp"
         android:text="@string/sample_text"
         android:textColor="@color/hintcolor"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="337dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="325dp" />
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/sermons"
+        android:title="Sermons"/>
+    <item android:id="@+id/library"
+        android:title="Library"/>
+    <item android:id="@+id/settings"
+        android:title="Settings"/>
+    <item android:id="@+id/helpandsupport"
+        android:title="@string/helpandsupport"/>
+    <item android:id="@+id/sendfeeback"
+        android:title="Send Feedback"/>
+
+
+</menu>

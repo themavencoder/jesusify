@@ -11,22 +11,27 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="Sermons">
-
-        </activity>
+            android:label="Sermons"></activity>
         <activity
             android:name=".intro.IntroActivity"
-            android:theme="@style/AppNoActionBarTheme"></activity>
+            android:theme="@style/AppNoActionBarTheme" />
         <activity
             android:name=".authentication.SignupActivity"
             android:label="@string/signup" />
         <activity
             android:name=".authentication.SigninActivity"
             android:label="@string/signin" />
-        <activity android:name=".LibraryActivity"
-            android:theme="@style/NoDefaultActionBar"
+        <activity
+            android:name=".LibraryActivity"
             android:label="My Library"
-            >
+            android:theme="@style/NoDefaultActionBar">
+
+        </activity>
+        <activity
+            android:name=".CartActivity"
+            android:label="Cart" />
+        <activity android:name=".payment.PaymentActivity" />
+        <activity android:name=".navdrawer.NavActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,10 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CartActivity"
-            android:label="Cart" />
-        <activity android:name=".payment.PaymentActivity"></activity>
     </application>
 
 </manifest>
