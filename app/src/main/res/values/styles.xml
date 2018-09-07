@@ -8,6 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorHint">@color/hintcolor</item>
         <item name="android:typeface">serif</item>
+        <item name="actionOverflowButtonStyle">@style/DotsWhiteTheme</item>
+
+    </style>
+
+    <style name="NoDefaultActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
     </style>
 
     <style name="AppNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -19,4 +27,18 @@
         <item name="android:typeface">serif</item>
     </style>
 
+    <style name="ActionBarPopUpThemeOverlay"
+        parent="AppTheme">
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent = "@style/Base.TextAppearance.AppCompat.Title">
+
+        <item name="android:textSize" >16sp</item>
+    </style>
+
+    <style name="DotsWhiteTheme" parent="@style/Widget.AppCompat.ActionButton.Overflow" >
+        <item name="android:tint">#FFFFFF</item>
+    </style>
 </resources>

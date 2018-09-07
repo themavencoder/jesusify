@@ -12,11 +12,7 @@
         <activity
             android:name=".MainActivity"
             android:label="Sermons">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".intro.IntroActivity"
@@ -27,7 +23,17 @@
         <activity
             android:name=".authentication.SigninActivity"
             android:label="@string/signin" />
-        <activity android:name=".LibraryActivity" />
+        <activity android:name=".LibraryActivity"
+            android:theme="@style/NoDefaultActionBar"
+            android:label="My Library"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".CartActivity"
             android:label="Cart" />

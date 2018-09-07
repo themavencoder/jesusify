@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:padding="8dp"
+
+    android:background="@color/colorbackground"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/library_sermonimage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/thinkbig" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/library_downloadposition"
+                android:layout_gravity="bottom"
+                android:src="@drawable/promptdownload"/>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/library_sermontitle"
+            android:text="Think big"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hintcolor"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="By"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#2D9CDB"
+                android:id="@+id/library_sermonpreacher"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dp"
+                android:textSize="12sp"
+                android:text="Pastor EA Adeboye"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hintcolor"
+                android:id="@+id/library_date"
+                android:text="FEB 12,2017."
+                android:textSize="10sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hintcolor"
+                android:id="@+id/library_time"
+                android:layout_marginLeft="8dp"
+                android:text="1 hour 40 minutes"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/library_morevertical"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
