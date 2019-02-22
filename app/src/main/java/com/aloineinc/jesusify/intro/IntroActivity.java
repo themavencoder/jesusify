@@ -47,9 +47,9 @@ public class IntroActivity extends AppCompatActivity  {
     }
 
     private void createDots(int current_position) {
-        if (Dots_Layout != null) {
+        /*if (Dots_Layout != null) {
             Dots_Layout.removeAllViews();
-        }
+        }*/
         dots = new ImageView[layouts.length];
         for (int i = 0; i < layouts.length; i++) {
             dots[i] = new ImageView(this);
